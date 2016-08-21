@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "CircleView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *colorSlider;
+@property (weak, nonatomic) IBOutlet UISlider *redColorSlider;
+@property (weak, nonatomic) IBOutlet UISlider *greenColorSlider;
+
+@property (weak, nonatomic) IBOutlet CircleView *circleView;
+@property (weak, nonatomic) IBOutlet CircleView *leftCircleView;
+@property (weak, nonatomic) IBOutlet CircleView *rightCircleView;
 
 @end
 
@@ -16,12 +24,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)colorSlider:(id)sender {
+    NSLog(@"%f", self.colorSlider.value);
+    [self.circleView setStrokeColorWithBlue:self.colorSlider.value red:self.redColorSlider.value green:self.greenColorSlider.value];
+    [self.leftCircleView setStrokeColorWithBlue:self.colorSlider.value red:self.redColorSlider.value green:self.greenColorSlider.value];
+    [self.rightCircleView setStrokeColorWithBlue:self.colorSlider.value red:self.redColorSlider.value green:self.greenColorSlider.value];
 }
 
 @end

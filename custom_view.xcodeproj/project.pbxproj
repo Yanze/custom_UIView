@@ -13,6 +13,7 @@
 		E03CC1BD1D6908FE006CC087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03CC1BB1D6908FE006CC087 /* Main.storyboard */; };
 		E03CC1BF1D6908FE006CC087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03CC1BE1D6908FE006CC087 /* Assets.xcassets */; };
 		E03CC1C21D6908FE006CC087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03CC1C01D6908FE006CC087 /* LaunchScreen.storyboard */; };
+		E03CC1CB1D690FFD006CC087 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CC1CA1D690FFD006CC087 /* CircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E03CC1BE1D6908FE006CC087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E03CC1C11D6908FE006CC087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E03CC1C31D6908FE006CC087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E03CC1C91D690FFD006CC087 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		E03CC1CA1D690FFD006CC087 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				E03CC1B81D6908FE006CC087 /* ViewController.h */,
 				E03CC1B91D6908FE006CC087 /* ViewController.m */,
 				E03CC1BB1D6908FE006CC087 /* Main.storyboard */,
+				E03CC1C91D690FFD006CC087 /* CircleView.h */,
+				E03CC1CA1D690FFD006CC087 /* CircleView.m */,
 				E03CC1BE1D6908FE006CC087 /* Assets.xcassets */,
 				E03CC1C01D6908FE006CC087 /* LaunchScreen.storyboard */,
 				E03CC1C31D6908FE006CC087 /* Info.plist */,
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					E03CC1AE1D6908FE006CC087 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WQ56QXLK4A;
 					};
 				};
 			};
@@ -149,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03CC1CB1D690FFD006CC087 /* CircleView.m in Sources */,
 				E03CC1BA1D6908FE006CC087 /* ViewController.m in Sources */,
 				E03CC1B71D6908FE006CC087 /* AppDelegate.m in Sources */,
 				E03CC1B41D6908FE006CC087 /* main.m in Sources */,
@@ -263,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = custom_view/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanzeliu.custom-view";
@@ -274,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = custom_view/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanzeliu.custom-view";
